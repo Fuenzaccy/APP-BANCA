@@ -1,0 +1,75 @@
+
+/* Barra de navegación secundaria */
+.sub-navbar {
+    background-color: #e0e0e0; 
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px 15px;
+  
+      &:hover {
+        background-color: #d5d5d5; 
+        border-radius: 5px;
+      }
+  
+      &.active {
+        color: #007bff; 
+        border-bottom: 2px solid #007bff;
+      }
+    }
+  }
+
+/* Estilo del contenedor principal */
+.perfil-inversor-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+  
+    .tarjeta {
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9; /* Color de fondo */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+      padding: 20px;
+      max-width: 600px; /* Ancho máximo de la tarjeta */
+  
+      .foto-perfil {
+        margin-right: 20px; /* Espacio entre la foto y el texto */
+        img {
+          width: 100px; /* Tamaño pequeño de la foto */
+          height: 100px;
+          border-radius: 50%; /* Hace la foto redonda */
+          object-fit: cover; /* Ajusta la imagen para que quede centrada */
+          border: 2px solid #ddd; /* Borde sutil */
+        }
+      }
+  
+      .info-perfil {
+        h2 {
+          margin: 0 0 10px 0;
+          font-size: 1.5rem;
+          color: #333;
+        }
+  
+        p {
+          margin: 5px 0;
+          font-size: 1rem;
+          color: #555;
+          line-height: 1.5;
+        }
+  
+        strong {
+          color: #007bff; /* Color destacado */
+        }
+      }
+    }
+  }

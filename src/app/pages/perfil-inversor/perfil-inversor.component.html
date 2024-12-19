@@ -1,0 +1,33 @@
+<!-- Segunda barra de navegación -->
+<nav class="sub-navbar">
+    <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+    <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+    <a routerLink="/proyectos" routerLinkActive="active">Proyectos</a>
+    <a routerLink="/red-contactos" class="active">Red de contactos</a>
+  </nav>
+
+<!-- Contenedor principal del perfil -->
+<div class="perfil-inversor-card">
+
+    <!-- Tarjeta con la información -->
+    <div class="tarjeta">
+
+      <!-- Foto del inversor -->
+      <div class="foto-perfil">
+        <img [src]="inversorSeleccionado.foto" alt="{{ inversorSeleccionado.nombre }}" />
+      </div>
+      
+      <!-- Información del inversor -->
+      <div class="info-perfil">
+        <h2>{{ inversorSeleccionado.nombre }}</h2>
+        <p><strong>Sector de interés:</strong> {{ inversorSeleccionado.sector }}</p>
+        <p><strong>Experiencia:</strong> {{ inversorSeleccionado.experiencia }}</p>
+        <p><strong>Enfoque de inversión:</strong> {{ inversorSeleccionado.enfoque }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mensaje en caso de que no se encuentre el inversor -->
+  <div *ngIf="!inversorSeleccionado" class="error">
+    <p>Inversor no encontrado.</p>
+  </div>

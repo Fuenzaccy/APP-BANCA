@@ -1,0 +1,56 @@
+<!-- Segunda barra de navegación -->
+<nav class="sub-navbar">
+  <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+  <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+  <a routerLink="/proyectos" routerLinkActive="active" class="active">Proyectos</a>
+  <a routerLink="/red-contactos" routerLinkActive="active">Red de contactos</a>
+</nav>
+
+<!-- Contenedor principal -->
+<div class="proyectos-container">
+  <h1>Publica tu proyecto social</h1>
+  <p>Publica tu proyecto social en formato PDF para contar con las múltiples ventajas de esta plataforma.</p>
+
+  <!-- Botón para subir proyecto -->
+  <div class="upload-section">
+      <button class="upload-button">
+          <i class="fa-solid fa-upload"></i> Inserte su proyecto
+      </button>
+      <button class="refresh-button">
+          <i class="fa-solid fa-rotate-right"></i>
+      </button>
+  </div>
+
+  <!-- Tarjetas de Proyectos -->
+  <div class="project-cards">
+
+      <!-- Viabilidad -->
+      <div class="card">
+        <img src="assets/125.jpeg" alt="Viabilidad" />
+        <h3>Viabilidad</h3>
+        
+        <!-- Enlace RouterLink -->
+        <a [routerLink]="['/viabilidad']" class="icono-link">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Mejoras -->
+      <div class="card">
+        <img src="assets/124.jpeg" alt="Mejoras" />
+        <h3>Mejoras</h3>
+        <a routerLink="/mejoras" class="icono-link">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Predicción de Éxito -->
+      <div class="card">
+          <img src="assets/123.jpeg" alt="Predicción de Éxito" />
+          <h3>Predicción Éxito</h3>
+          <a routerLink="/prediccion-exito" class="icono-link">
+              <i class="fa-solid fa-arrow-right"></i>
+          </a>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px); 
+  text-align: center;
+  padding: 20px;
+
+  .main-content {
+    .inicio-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.inicio-footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+
+  .contact-section {
+    .contact-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+
+        i {
+          font-size: 1.5rem;
+          color: #007bff;
+        }
+      }
+    }
+  }
+}

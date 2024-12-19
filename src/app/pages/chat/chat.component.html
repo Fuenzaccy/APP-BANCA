@@ -1,0 +1,30 @@
+<!-- Segunda barra de navegación -->
+<nav class="sub-navbar">
+    <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+    <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+    <a routerLink="/proyectos" routerLinkActive="active">Proyectos</a>
+    <a routerLink="/red-contactos" class="active">Red de contactos</a>
+</nav>
+
+<!-- Encabezado del Chat -->
+<div class="chat-header">
+    <div class="chat-avatar">
+      <img [src]="inversor.foto" alt="{{ inversor.nombre }}" />
+    </div>
+    <div class="chat-name">{{ inversor.nombre }}</div>
+  </div>
+  
+  <!-- Área de Mensajes -->
+  <div class="chat-box">
+    <div *ngFor="let mensaje of mensajes" class="chat-message" [ngClass]="mensaje.tipo">
+      {{ mensaje.texto }}
+    </div>
+  </div>
+  
+  <!-- Entrada de Mensaje -->
+  <div class="chat-input">
+    <input [(ngModel)]="nuevoMensaje" placeholder="Escribe un mensaje..." />
+    <button (click)="enviarMensaje()">
+      <i class="fa-solid fa-paper-plane"></i>
+    </button>
+  </div>

@@ -1,0 +1,44 @@
+<!-- Segunda barra de navegación -->
+<nav class="sub-navbar">
+  <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+  <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+  <a routerLink="/proyectos" routerLinkActive="active">Proyectos</a>
+  <a routerLink="/red-contactos" class="active">Red de contactos</a>
+</nav>
+
+<!-- Lista de contactos -->
+<div class="contact-list">
+  <div *ngFor="let contacto of contactos" class="contact-item">
+    <!-- Foto del inversor -->
+    <div class="contact-avatar">
+      <img
+        [src]="contacto.foto"
+        alt="{{ contacto.nombre }}"
+        class="foto-contacto"
+      />
+    </div>
+    <!-- Nombre del inversor -->
+    <div class="contact-name">{{ contacto.nombre }}</div>
+
+    <!-- Botones para ver detalles del perfil y chat -->
+    <div class="contact-actions">
+      
+      <!-- Enlace al perfil del inversor -->
+      <a
+        [routerLink]="['/perfil-inversor', contacto.id]"
+        class="action-link"
+        title="Ver Perfil"
+      >
+        <i class="fa-solid fa-user"></i>
+      </a>
+      <!-- Enlace al chat con el inversor -->
+      <a
+        [routerLink]="['/chat', contacto.id]"
+        class="action-link"
+        title="Chat"
+      >
+        <i class="fa-solid fa-comments"></i>
+      </a>
+    </div>
+  </div>
+</div>

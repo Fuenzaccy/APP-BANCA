@@ -1,0 +1,58 @@
+.servicios {
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  .titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .tarjeta {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 350px; 
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+
+      img {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 10px;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin: 15px 0;
+      }
+
+      .boton-ver-mas {
+        background-color: #28a745; 
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #218838; 
+        }
+      }
+    }
+  }
+}

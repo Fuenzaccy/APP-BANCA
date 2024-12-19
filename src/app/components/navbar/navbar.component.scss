@@ -1,0 +1,46 @@
+header {
+  background-color: #d9f8e8;
+  padding: 10px 20px;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2a2a2a;
+      }
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #2a2a2a;
+      font-weight: bold;
+
+      &:hover {
+        color: #007f00;
+      }
+    }
+
+    .user-icon {
+      cursor: pointer;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

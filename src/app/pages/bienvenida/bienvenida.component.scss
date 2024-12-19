@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Primera barra superior */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4f5d6;
+    padding: 10px 20px;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+  
+      img {
+        height: 40px;
+        margin-right: 10px;
+      }
+  
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  
+    .top-menu {
+      display: flex;
+      gap: 15px;
+  
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+  
+        &:hover {
+          color: #1b5e20;
+        }
+      }
+  
+      .user-icon img {
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  /* Segunda barra inferior */
+  .sub-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      &:hover,
+      &.active {
+        text-decoration: underline;
+        color: #1b5e20;
+      }
+  
+      &:hover {
+        color: #2e7d32;
+      }
+    }
+  }
+  
+  /* Contenido principal */
+  .bienvenida-content {
+    padding: 20px;
+  
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .eventos {
+        margin: 20px auto;
+        background-color: #e8f5e9;
+        padding: 20px;
+        border: 1px solid #a5d6a7;
+        border-radius: 5px;
+        max-width: 600px;
+  
+      h2 {
+        font-size: 1.5rem;
+        color: #2e7d32;
+      }
+  
+     
+        p {
+          color: #4f4f4f;
+          line-height: 1.5;
+        }
+      }
+    }
+  
